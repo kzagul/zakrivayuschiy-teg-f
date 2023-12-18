@@ -404,7 +404,7 @@
 ) {
   .card__watermark {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--color-white, var(--color-secondary));
-    text-stroke: 1px var(--color-white, var(--color-secondary));
+    -webkit-text-stroke: 1px var(--color-secondary);
+    text-stroke: 1px var(--color-secondary);
   }
 }
