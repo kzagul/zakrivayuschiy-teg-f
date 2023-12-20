@@ -19,14 +19,12 @@
   
   <body class="page">
     <header class="header header__card container">
-      <a href="#" class="header__logo">
-        <h1 class="header__title">
-          &lt;/HTML&gt;
-        </h1>
+      <a class="header__logo">
+        <span class="header__logo-text">&lt;/HTML&gt;</span>
       </a>
-      <h2 class="header__subtitle">
+      <h1 class="header__title">
         закрывающий тег
-      </h2>
+      </h1>
 
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -58,7 +56,7 @@
     <main>
       <section class="cards container">
         <article class="card">
-          <h3 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+          <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
 
           <div class="card__image-group">
             <span class="card__watermark">&lt;/HTML&gt;</span>
@@ -81,6 +79,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -114,7 +113,7 @@
         </article>
 
         <article class="card">
-          <h3 class="card__title">1 спринт: Я — чистый лист</h3>
+          <h2 class="card__title">1 спринт: Я — чистый лист</h2>
 
           <div class="card__image-group">
             <span class="card__watermark">&lt;/HTML&gt;</span>
@@ -138,6 +137,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -171,7 +171,7 @@
         </article>
 
         <article class="card">
-          <h3 class="card__title">1 спринт: А если не получится?</h3>
+          <h2 class="card__title">1 спринт: А если не получится?</h2>
 
           <div class="card__image-group">
             <span class="card__watermark">&lt;/HTML&gt;</span>
@@ -194,6 +194,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -227,7 +228,7 @@
         </article>
 
         <article class="card">
-          <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
+          <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
 
           <div class="card__image-group">
             <span class="card__watermark">&lt;/HTML&gt;</span>
@@ -250,6 +251,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -283,7 +285,7 @@
         </article>
 
         <article class="card">
-          <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
+          <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
 
           <div class="card__image-group">
             <span class="card__watermark">&lt;/HTML&gt;</span>
@@ -306,6 +308,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -339,7 +342,7 @@
         </article>
 
         <article class="card">
-          <h3 class="card__title">3 спринт: Обходные стратегии</h3>
+          <h2 class="card__title">3 спринт: Обходные стратегии</h2>
 
           <div class="card__image-group">
             <span class="card__watermark">&lt;/HTML&gt;</span>
@@ -362,6 +365,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -395,7 +399,7 @@
         </article>
 
         <article class="card">
-          <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
+          <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
 
           <div class="card__image-group">
             <span class="card__watermark">&lt;/HTML&gt;</span>
@@ -418,6 +422,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -451,7 +456,7 @@
         </article>
 
         <article class="card">
-          <h3 class="card__title">«Сейчас я здесь»</h3>
+          <h2 class="card__title">«Сейчас я здесь»</h2>
 
           <div class="card__image-group">
             <span class="card__watermark">&lt;/HTML&gt;</span>
@@ -475,6 +480,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -507,36 +513,35 @@
           </div>
         </article>
       </section>
-    </main>
 
-    <footer class="footer container">
-      <dialog id="dialog" class="footer__dialog">
-        <div class="dialog__section">
-          <svg class="dialog__icon" viewBox="0 0 28 28" >
+      <section class="section__save container">
+        <button 
+          onclick="window.dialog.showModal()"
+          aria-controls="dialog" 
+          class="button button__opener"
+        >
+          <svg class="button__icon" viewBox="0 0 28 28">
             <use href="svg/floppy.svg#floppy" />
           </svg>
-          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
+          <span class="button__text"> Сохранить на память </span>
+        </button>
 
-        <form method="dialog">
-          <button type="submit" class="button dialog__button">
-            <span class="button__text">ок</span>
-          </button>
-        </form>
-      </dialog>
+        <dialog id="dialog" class="dialog">
+          <div class="dialog__section">
+            <svg class="dialog__icon" viewBox="0 0 28 28" >
+              <use href="svg/floppy.svg#floppy" />
+            </svg>
+            <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+          </div>
 
-      <button 
-        onclick="window.dialog.showModal()"
-        aria-controls="dialog" 
-        class="button button__opener"
-      >
-        <svg class="button__icon" viewBox="0 0 28 28">
-          <use href="svg/floppy.svg#floppy" />
-        </svg>
-        <span class="button__text"> Сохранить на память </span>
-      </button>
-    </footer>
-
+          <form method="dialog">
+            <button type="submit" class="button dialog__button">
+              <span class="button__text">ок</span>
+            </button>
+          </form>
+        </dialog>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

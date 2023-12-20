@@ -1,20 +1,19 @@
 :root {
-    --font-primary: "Inter", monospace;
+    --font-primary: "Inter", sans-serif;
     --font-secondary: "PressStart2P", monospace;
 
     --color-primary: #00CC14;
     --color-secondary: #000000;
     --color-heart: #FF0000;
     --color-button-text: #00CC14;
-    --color-backdrop: #111111;
     --color-white: #FFFFFF;
 
     --font-weight-static: 400;
     --font-weight-normal: 400;
     --font-weight-bold: 785;
-
-    --title-size: 49px;
-    --subtitle-size: 14px;
+    
+    --logo-text-size: clamp(2.875rem, 2.5357rem + 1.6964vw, 4.0625rem);
+    --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
     --text-size: 18px;
     --text-size-small: 14px;
 
@@ -22,8 +21,8 @@
     --gradient-color-primary: #007f0c;
     --gradient-color-secondary: #004306;
 
-    --gradient-horizontal: repeating-linear-gradient(to right, var(--gradient-background), transparent 4px);
-    --gradient-vertical: repeating-linear-gradient(to bottom, var(--gradient-background), transparent 4px);
+    --gradient-horizontal: repeating-linear-gradient(to right, var(--gradient-background), transparent 2px);
+    --gradient-vertical: repeating-linear-gradient(to bottom, var(--gradient-background), transparent 2px);
     --gradient-diagonal: repeating-linear-gradient(to bottom, var(--gradient-color-primary) 0.01%, var(--gradient-color-secondary));
 
     --gradient-pattern: var(--gradient-horizontal), var(--gradient-vertical), var(--gradient-diagonal);
@@ -31,4 +30,6 @@
     --color-heart-contour: #00CC14;
     --color-heart-filled: var(--color-heart);
     --color-heart-unfilled: #000000;
+
+    --max-container-width: 696px;
 }
