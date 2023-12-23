@@ -12,7 +12,7 @@
     --font-weight-normal: 400;
     --font-weight-bold: 785;
     
-    --logo-text-size: clamp(2.875rem, 2.5357rem + 1.6964vw, 4.0625rem);
+    --logo-text-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
     --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
     --text-size: 18px;
     --text-size-small: 14px;
@@ -21,9 +21,9 @@
     --gradient-color-primary: #007f0c;
     --gradient-color-secondary: #004306;
 
-    --gradient-horizontal: repeating-linear-gradient(to right, var(--gradient-background), transparent 2px);
-    --gradient-vertical: repeating-linear-gradient(to bottom, var(--gradient-background), transparent 2px);
-    --gradient-diagonal: repeating-linear-gradient(to bottom, var(--gradient-color-primary) 0.01%, var(--gradient-color-secondary));
+    --gradient-horizontal: repeating-linear-gradient(to right, var(--gradient-background) 0 2px, transparent 2px 4px);
+    --gradient-vertical: repeating-linear-gradient(to bottom, var(--gradient-background) 0 2px, transparent 2px 4px);
+    --gradient-diagonal: repeating-linear-gradient(to bottom, var(--gradient-color-primary) 0.01%, var(--gradient-color-secondary) 100%);
 
     --gradient-pattern: var(--gradient-horizontal), var(--gradient-vertical), var(--gradient-diagonal);
 
@@ -31,5 +31,5 @@
     --color-heart-filled: var(--color-heart);
     --color-heart-unfilled: #000000;
 
-    --max-container-width: 696px;
+    --max-container-width: 700px;
 }
