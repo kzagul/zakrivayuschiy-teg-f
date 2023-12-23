@@ -84,7 +84,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: -3px;
@@ -93,7 +93,7 @@
   height: 2px;
   background-color: var(--color-primary);
   scale: 0;
-  transform-origin: left; 
+  transform-origin: left;
   transition: scale 0.3s ease;
 }
 
